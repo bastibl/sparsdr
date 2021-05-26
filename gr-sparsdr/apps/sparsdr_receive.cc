@@ -141,7 +141,7 @@ void run_receive(const std::string& usrp_address,
     // Basic USRP configuration
     usrp->set_gain(gain);
     usrp->set_center_freq(frequency);
-    usrp->set_antenna("RX2");
+    usrp->set_antenna(antenna);
 
     // Set up mask
     gr::sparsdr::mask_range mask;
