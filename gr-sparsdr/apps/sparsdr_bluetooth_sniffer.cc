@@ -12,7 +12,7 @@
  */
 
 #include <sparsdr/multi_sniffer.h>
-#include <gr_bluetooth/multi_sniffer.h>
+#include <bluetooth/multi_sniffer.h>
 #include <gnuradio/top_block.h>
 #include <boost/lexical_cast.hpp>
 

@@ -22,7 +22,7 @@
 #include <sparsdr/compressing_usrp_source.h>
 #include <sparsdr/real_time_receiver.h>
 #include <sparsdr/multi_sniffer.h>
-#include <gr_bluetooth/multi_sniffer.h>
+#include <bluetooth/multi_sniffer.h>
 #include <boost/lexical_cast.hpp>
 
 namespace {

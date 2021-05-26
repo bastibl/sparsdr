@@ -22,7 +22,7 @@
 #include "config.h"
 #endif
 
-#include <QApplication>
+#include <qapplication.h>
 #include <gnuradio/io_signature.h>
 #include "average_waterfall_impl.h"
 

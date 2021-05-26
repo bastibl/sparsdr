@@ -1,7 +1,7 @@
 /*
  * Copyright 2011 Free Software Foundation, Inc.
  *
- * This file is part of GNU Radio
+ * This file is a part of gr-sparsdr
  *
  * GNU Radio is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -25,9 +25,9 @@
 #include <gnuradio/attributes.h>
 
 #ifdef gnuradio_sparsdr_EXPORTS
-#  define SPARSDR_API __GR_ATTR_EXPORT
+#define SPARSDR_API __GR_ATTR_EXPORT
 #else
-#  define SPARSDR_API __GR_ATTR_IMPORT
+#define SPARSDR_API __GR_ATTR_IMPORT
 #endif
 
 #endif /* INCLUDED_SPARSDR_API_H */

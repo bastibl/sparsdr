@@ -1,6 +1,6 @@
 # Copyright 2011 Free Software Foundation, Inc.
 #
-# This file is part of GNU Radio
+# This file is part of gr-sparsdr
 #
 # GNU Radio is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -44,20 +44,17 @@ install(
     DESTINATION bin
 )
 
-find_package(gr_bluetooth)
+find_package(gnuradio-bluetooth)
 
-if(GR_BLUETOOTH_FOUND)
+if(TARGET gnuradio::gnuradio-bluetooth)
+
     # sparsdr_bluetooth_sniffer
     add_executable(sparsdr_bluetooth_sniffer
         sparsdr_bluetooth_sniffer.cc
     )
-    target_include_directories(sparsdr_bluetooth_sniffer
-        PRIVATE
-        ${GR_BLUETOOTH_INCLUDE_DIRS}
-    )
     target_link_libraries(sparsdr_bluetooth_sniffer
         gnuradio-sparsdr
-        ${GR_BLUETOOTH_LIBRARIES}
+        gnuradio::gnuradio-bluetooth
     )
     install(
         TARGETS sparsdr_bluetooth_sniffer
@@ -68,14 +65,10 @@ if(GR_BLUETOOTH_FOUND)
     add_executable(sparsdr_receive_sniffer
         sparsdr_receive_sniffer.cc
     )
-    target_include_directories(sparsdr_receive_sniffer
-        PRIVATE
-        ${GR_BLUETOOTH_INCLUDE_DIRS}
-    )
     target_link_libraries(sparsdr_receive_sniffer
         gnuradio-sparsdr
-        ${GR_BLUETOOTH_LIBRARIES}
-        ${UHD_LIBRARIES}
+        gnuradio::gnuradio-bluetooth
+        UHD::UHD
     )
     install(
         TARGETS sparsdr_receive_sniffer

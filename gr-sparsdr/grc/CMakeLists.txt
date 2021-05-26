@@ -1,6 +1,6 @@
 # Copyright 2011 Free Software Foundation, Inc.
 #
-# This file is part of GNU Radio
+# This file is part of gr-sparsdr
 #
 # GNU Radio is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -18,8 +18,8 @@
 # Boston, MA 02110-1301, USA.
 
 install(FILES
-    sparsdr_reconstruct.xml
-    sparsdr_compressing_usrp_source.xml
-    sparsdr_average_waterfall.xml
-    sparsdr_sample_distributor.xml DESTINATION share/gnuradio/grc/blocks
+    sparsdr_reconstruct.block.yml
+    sparsdr_compressing_usrp_source.block.yml
+    sparsdr_average_waterfall.block.yml
+    sparsdr_sample_distributor.block.yml DESTINATION share/gnuradio/grc/blocks
 )

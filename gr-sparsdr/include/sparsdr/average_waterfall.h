@@ -25,7 +25,10 @@
 #include <sparsdr/api.h>
 #include <gnuradio/sync_block.h>
 #include <QWidget>
+#pragma push_macro("slots")
+#undef slots
 #include <Python.h>
+#pragma pop_macro("slots")
 
 namespace gr {
   namespace sparsdr {

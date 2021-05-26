@@ -5,7 +5,7 @@
 
 #include <map>
 
-#include <gnuradio/filter/rational_resampler_base_ccf.h>
+#include <gnuradio/filter/rational_resampler_base.h>
 #include <gnuradio/blocks/file_source.h>
 
 namespace gr {
