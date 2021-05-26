@@ -56,7 +56,7 @@ namespace gr {
       }
 
       // Tell runtime system how many output items we produced.
-      return noutput_items;
+      return sample_count * 2;
     }
 
     std::chrono::high_resolution_clock::time_point
